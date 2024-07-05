@@ -23,6 +23,7 @@ resource "azurerm_public_ip" "mypublicip" {
   domain_name_label = "app1-vm-${random_string.myrandom.id}"
   tags = {
     environment = "Dev"
+    dept = "IT"
   }
 }
 
